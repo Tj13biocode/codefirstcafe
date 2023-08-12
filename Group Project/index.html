@@ -1,0 +1,159 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta name="viewpoint" content="width=device-width, inital-scale=1.0">
+      <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@100;400&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+      <link rel="stylesheet" href="style.css">
+
+      <title>Buy our bakes</title>
+  </head>
+
+  <header class="topnav">
+    <ul>
+    <li><a href="#home">Home</a></li>
+    <li><a href="#menu">Menu</a></li>
+    <li><a href="#gallery">Gallery</a></li>
+    <li><a href="#order" class="active">Order</a></li>
+    <li><a href="#visitus">Visit us</a></li>
+    <div id="basket"><button class="button" onclick="myNotification()"><i class="fa fa-shopping-basket"></i><span id="item-count">0</span></button>
+  </div>
+  </ul>
+</header>
+
+<body>
+  <h2 class="intro">Welcome to the order page</h2>
+  <p class="intro"> "tt, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, 
+    sunt in culpa qui officia deserunt mollit anim id est laborum."</p>
+
+</div>
+
+<div class="container">
+  <div class="row">
+    <div class="col-sm">
+      <img src="brownies.jpeg" alt="brownies" style="width:100%">
+      <h2>Brownies</h2>
+      <p>£5.99</p>
+      <p><button onclick="brownies()" class="add-to-basket">Add to Basket</button></p>
+    </div>
+    <div class="col-sm">
+      <img src="flapjacks.jpeg" alt="flapjacks" style="width:100%">
+      <h2>Flapjacks</h2>
+      <p>£5.99</p>
+      <p><button onclick="flapjacks()" class="add-to-basket">Add to Basket</button></p>
+    </div>
+    <div class="col-sm">
+      <img src="macarons.jpeg" alt="macarons" style="width:100%">
+      <h2>Macarons</h2>
+      <p>£5.99</p>
+      <p><button onclick="macarons()" class="add-to-basket">Add to Basket</button></p>
+    </div>
+  </div>
+</div>
+</div>
+
+<div class="container">
+<div class="row">
+    <div class="col-sm">
+      <img src="almond crossiant .jpeg" alt="brownies" style="width:100%">
+      <h2>Almond Crossiant</h2>
+      <p><button onclick="almond()" class="add-to-basket">Add to Basket</button></p>
+      <p>£5.99</p>
+    </div>
+    <div class="col-sm">
+      <img src="strawberry-cheesecake.jpeg" alt="brownies" style="width:100%">
+      <h2>Strawberry Cheesecake</h2>
+      <p><button onclick="strawberrycheesecake()" class="add-to-basket">Add to Basket</button></p>
+      <p>£5.99</p>
+    </div>
+    <div class="col-sm">
+      <img src="cinnamon roll.jpeg" alt="flapjacks!" style="width:100%">
+      <h2>Cinnamon Rolls</h2>
+      <p><button onclick="cinnamon()" class="add-to-basket">Add to Basket</button></p>
+      <p>£5.99</p>
+    </div>
+    </div>
+  </div> 
+</div>
+<script>
+  function myNotification() {
+    alert(`You have ${itemCountElement.textContent = itemCount} items in your basket`)
+  }
+  function almond(){
+    alert("You added 1 Almond Crossiant to your basket")
+  }
+  function brownies() {
+    alert("You added 1 Brownies to your basket")
+  }
+
+  function macarons() {
+    alert("You added 1 Macarons to your basket")
+  }
+  function flapjacks() {
+    alert("You added 1 Flapjack to your basket")
+  }
+  function strawberrycheesecake() {
+    alert("You added 1 Strawberry Cheesecake to your basket")
+  }
+  function cinnamon() {
+    alert("You added 1 Cinnamon Roll to your basket")
+
+  }
+  // Get the "Add to Basket" buttons
+const addToBasketButtons = document.querySelectorAll('.add-to-basket');
+
+// Get the item count element
+const itemCountElement = document.getElementById('item-count');
+
+// Initialize item count
+let itemCount = 0;
+
+// Add event listeners to each "Add to Basket" button
+addToBasketButtons.forEach(button => {
+    button.addEventListener('click', () => {
+        itemCount++; // Increment item count
+        itemCountElement.textContent = itemCount; // Update the displayed count
+    });
+});
+</script>
+</body>
+<div class="footer">
+  <div class="container">
+    <div class="row">
+      <div class="col">
+        
+        <img src="CODE FIRST CAFE LOGO.png" style="width:100%"> 
+      </div>
+      <div class="col">
+        <h2>Opening Hours</h2>
+        <p class="font-weight-bold">Monday-Friday</p>
+        <p>9:00am-9:30pm</p>
+        <p class="font-weight-bold">Weekends</p>
+        <p>9:00am-4:30pm</p>
+      </div>
+      <div class="col">
+        <h2>Contact Us</h2>
+        <p><a class="socials" href="https://www.facebook.com/codefirstgirls" target="_blank">Facebook</a></p>
+        <p><a class="socials" href="https://www.instagram.com/codefirstgirls/" target="_blank">Instagram</a></p>
+        <p><a class="socials" href="https://twitter.com/CodeFirstGirls?ref_src=twsrc%5Egoogle%7Ctwcamp%5Eserp%7Ctwgr%5Eauthor" target="_blank">Twitter</a></p>
+      </div>
+      <div class="col">
+        <h2>Where to find us</h2>
+        <h5>London</h5>
+        <address>61 Fake Street
+          Stoke Newington
+          <br>London
+          N16 8EL
+          020 7249 1772
+        </address>
+      </div>
+    </div>
+  </div>
+</div> 
+
+
+</html>
