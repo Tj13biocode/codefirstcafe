@@ -6,7 +6,7 @@
   font-family: 'Roboto', sans-serif;
 }
 
-/* header design 2 */
+/* header design  */
 
 .topnav {
   background-color: #DBC1AC;
@@ -52,53 +52,6 @@ body {
   height: 100vh;
   margin: 0;
 }
-
-/* header design */
-/* .topnav { 
-  background-color:  #DBC1AC; 
-  text-align: center;
-  justify-content: center;
-  /* padding: 5px;  */
-
-/* body {
-  background-color: #fbf7f5;
-  height: 100vh;
-  margin: 0;
-}
-
-li {
-  list-style-type: none;
-  padding: 19px;
-}
-
-ul {
-  display: flex;
-  justify-content: center;
-  padding: 0px 0px 0px 15px;
-}
-
-a {
-  text-decoration: none;
-  color: black;
-  font-size: 16px;
-  font-family: 'Roboto', serif;
-}
-
-a.active {
-  text-decoration: underline;
-}
-
-.topnav a:hover {
-  text-decoration: underline;
-}
-
-.button {
-  cursor: pointer;
-  border: none;
-  background-color: transparent;
-  padding: 22px;
-}    */
-
 
 
 /* main content design */
