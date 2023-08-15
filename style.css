@@ -47,6 +47,12 @@
   padding: 16px;
 }    
 
+body {
+  background-color: #fbf7f5;
+  height: 100vh;
+  margin: 0;
+}
+
 /* header design */
 /* .topnav { 
   background-color:  #DBC1AC; 
