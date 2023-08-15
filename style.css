@@ -47,14 +47,15 @@
   padding: 16px;
 }    
 
+
+
+/* main content design */
+
 body {
   background-color: #fbf7f5;
   height: 100vh;
   margin: 0;
 }
-
-
-/* main content design */
 
 .intro{
   text-align: center;
