@@ -201,7 +201,7 @@ button[id="signup"]:hover {
 
 /* PHONE VERSION  */
 @media screen and (max-width: 600px) {
-*  {
+.row  {
   flex-direction: column;
   align-items: center;
   column-gap: 0;
