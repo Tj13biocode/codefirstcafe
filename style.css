@@ -58,10 +58,18 @@ body {
 
 .intro{
   text-align: center;
-  margin: 20px;
+  margin: 10px 0 0 0px;
   padding: 10px;
-  margin-bottom: 20px;
+  /* margin-bottom: 20px; */
   max-width: 400ch;
+} 
+
+.text {
+  text-align: center;
+  padding: 10px;
+  /* margin-bottom: 20px; */
+  max-width: 500ch;
+  flex-wrap: wrap;
 } 
 
 .row {
