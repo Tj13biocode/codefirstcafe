@@ -80,7 +80,7 @@ a[class="nav"]:hover {
 
 .row {
   display: flex;
-  column-gap: 150px;
+  column-gap: 100px;
   text-align: center;
   margin: 10px;
   padding: 30px;
