@@ -3,7 +3,8 @@
  * {
   margin: 0;
   padding: 0;
-  font-family: 'Roboto', sans-serif;
+  font-family: 'Roboto';
+  font-weight: bold;
 }
 
 /* header design  */
@@ -27,14 +28,14 @@
 }
 
 .topnav a:hover {
-  background-color:  #ECE0D1;
-  color: black;
-}
-
-.topnav a.active {
-  background-color: #ECE0D1;
-  color: black;
-}
+    background-color: #ddd;
+    color: black;
+  }
+  
+ .topnav a.active {
+    background-color: black;
+    color: white;
+  }
 
 .topnav .icon {
   display: none;
